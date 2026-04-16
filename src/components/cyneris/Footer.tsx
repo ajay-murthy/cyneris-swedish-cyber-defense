@@ -32,8 +32,8 @@ export const Footer = () => {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>Stockholm, Sweden</li>
               <li>Est. 2024</li>
-              <li><a href="mailto:hello@axioms.se" className="hover:text-primary transition-colors">hello@axioms.se</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Responsible disclosure</a></li>
+              <li><a href="#contact" className="hover:text-primary transition-colors">Contact us</a></li>
+              <li><a href="#contact" className="hover:text-primary transition-colors">Responsible disclosure</a></li>
             </ul>
           </div>
         </div>
