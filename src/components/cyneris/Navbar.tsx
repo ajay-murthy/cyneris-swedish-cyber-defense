@@ -34,7 +34,7 @@ export const Navbar = () => {
             <div className="absolute inset-0 blur-md bg-primary/30 -z-10" />
           </div>
           <span className="font-mono text-lg font-bold tracking-tight">
-            CYNERIS<span className="text-primary">.</span>
+            AXIOMS<span className="text-primary">.</span>
           </span>
         </a>
 

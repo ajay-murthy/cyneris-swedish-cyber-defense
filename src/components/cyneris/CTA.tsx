@@ -27,7 +27,7 @@ export const CTA = () => {
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="outlineGold" size="xl">
-              hello@cyneris.se
+              hello@axioms.se
             </Button>
           </div>
         </div>

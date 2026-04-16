@@ -53,7 +53,7 @@ export const Services = () => {
             <span className="text-gradient-gold">One adversarial platform.</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Cyneris fuses AI-augmented reconnaissance with hands-on offensive engineering.
+            Axioms fuses AI-augmented reconnaissance with hands-on offensive engineering.
             Every engagement maps findings back to your compliance posture.
           </p>
         </div>

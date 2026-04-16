@@ -17,7 +17,7 @@ export const Hardware = () => {
             <span className="text-gradient-gold">offensive appliances.</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Our consultants deploy Cyneris field units — ruggedised security testing appliances
+            Our consultants deploy Axioms field units — ruggedised security testing appliances
             engineered in Sweden for on-site assessments and continuous monitoring.
           </p>
         </div>
@@ -29,7 +29,7 @@ export const Hardware = () => {
             <div className="relative animate-float-slow">
               <img
                 src={deviceNexus}
-                alt="Cyneris Nexus-6 security testing appliance with dual antennas and tactical display"
+                alt="Axioms Nexus-6 security testing appliance with dual antennas and tactical display"
                 className="w-full h-auto rounded-lg shadow-elegant"
               />
             </div>
@@ -48,7 +48,7 @@ export const Hardware = () => {
             </h3>
             <p className="text-muted-foreground mb-8 leading-relaxed">
               A tactical penetration-testing platform combining wide-band SDR, dual high-gain antennas
-              and Cyneris OS. Designed for in-field red team engagements across automotive, IoT and
+              and Axioms OS. Designed for in-field red team engagements across automotive, IoT and
               enterprise wireless infrastructure.
             </p>
 
@@ -83,7 +83,7 @@ export const Hardware = () => {
             <p className="text-muted-foreground mb-8 leading-relaxed">
               An always-on edge sensor for continuous network and RF monitoring. Deploy across
               office floors, factory cells or vehicle fleets to feed live telemetry into the
-              Cyneris threat intelligence dashboard.
+              Axioms threat intelligence dashboard.
             </p>
 
             <div className="grid grid-cols-2 gap-4">
@@ -106,7 +106,7 @@ export const Hardware = () => {
             <div className="relative animate-float-slow" style={{ animationDelay: "1s" }}>
               <img
                 src={deviceCompact}
-                alt="Cyneris Sentry-C1 compact monitoring node with integrated touchscreen"
+                alt="Axioms Sentry-C1 compact monitoring node with integrated touchscreen"
                 className="w-full h-auto rounded-lg shadow-elegant"
               />
             </div>

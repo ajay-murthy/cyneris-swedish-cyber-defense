@@ -1,13 +1,13 @@
-import { Navbar } from "@/components/cyneris/Navbar";
-import { Hero } from "@/components/cyneris/Hero";
-import { Marquee } from "@/components/cyneris/Marquee";
-import { Services } from "@/components/cyneris/Services";
-import { Platform } from "@/components/cyneris/Platform";
-import { Hardware } from "@/components/cyneris/Hardware";
-import { Compliance } from "@/components/cyneris/Compliance";
-import { Company } from "@/components/cyneris/Company";
-import { CTA } from "@/components/cyneris/CTA";
-import { Footer } from "@/components/cyneris/Footer";
+import { Navbar } from "@/components/axioms/Navbar";
+import { Hero } from "@/components/axioms/Hero";
+import { Marquee } from "@/components/axioms/Marquee";
+import { Services } from "@/components/axioms/Services";
+import { Platform } from "@/components/axioms/Platform";
+import { Hardware } from "@/components/axioms/Hardware";
+import { Compliance } from "@/components/axioms/Compliance";
+import { Company } from "@/components/axioms/Company";
+import { CTA } from "@/components/axioms/CTA";
+import { Footer } from "@/components/axioms/Footer";
 
 const Index = () => {
   return (
