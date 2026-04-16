@@ -16,22 +16,22 @@ export const Hero = () => {
 
       <div className="container relative z-10">
         <div className="max-w-4xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary/30 bg-primary/5 backdrop-blur-sm mb-8 animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-foreground/20 bg-background/60 backdrop-blur-sm mb-8 animate-fade-in">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
             </span>
-            <span className="text-xs font-mono text-primary tracking-widest uppercase">
+            <span className="text-xs font-mono text-foreground tracking-widest uppercase">
               EST. 2024 — STOCKHOLM, SWEDEN
             </span>
           </div>
 
-          <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.95] mb-6 opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+          <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl xl:text-9xl leading-[0.9] mb-6 opacity-0 animate-fade-up tracking-tight" style={{ animationDelay: "0.1s" }}>
             Adversarial
             <br />
             intelligence for
             <br />
-            <span className="text-gradient-gold">connected systems.</span>
+            <span className="italic">connected systems.</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
