@@ -8,7 +8,7 @@ export const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2.5 mb-6">
               <CyrenisMark className="w-7 h-7" />
-              <span className="font-mono text-lg font-bold">CYNERIS<span className="text-primary">.</span></span>
+              <span className="font-mono text-lg font-bold">AXIOMS<span className="text-primary">.</span></span>
             </div>
             <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
               AI-driven cybersecurity assessments and penetration testing.
@@ -28,11 +28,11 @@ export const Footer = () => {
           </div>
 
           <div>
-            <div className="font-mono text-xs uppercase tracking-widest text-primary mb-4">Cyneris AB</div>
+            <div className="font-mono text-xs uppercase tracking-widest text-primary mb-4">Axioms AB</div>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>Stockholm, Sweden</li>
               <li>Est. 2024</li>
-              <li><a href="mailto:hello@cyneris.se" className="hover:text-primary transition-colors">hello@cyneris.se</a></li>
+              <li><a href="mailto:hello@axioms.se" className="hover:text-primary transition-colors">hello@axioms.se</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Responsible disclosure</a></li>
             </ul>
           </div>
@@ -40,7 +40,7 @@ export const Footer = () => {
 
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <div className="font-mono text-xs text-muted-foreground">
-            © 2024–{new Date().getFullYear()} CYNERIS AB · ALL RIGHTS RESERVED
+            © 2024–{new Date().getFullYear()} AXIOMS AB · ALL RIGHTS RESERVED
           </div>
           <div className="flex gap-6 font-mono text-xs text-muted-foreground">
             <a href="#" className="hover:text-primary transition-colors">PRIVACY</a>

@@ -18,7 +18,7 @@ export const Company = () => {
 
           <div className="lg:col-span-7 space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Cyneris was founded in 2024 by a team of offensive-security engineers and
+              Axioms was founded in 2024 by a team of offensive-security engineers and
               automotive cybersecurity specialists with one shared belief: defence requires
               an attacker's mindset, sharpened by AI.
             </p>

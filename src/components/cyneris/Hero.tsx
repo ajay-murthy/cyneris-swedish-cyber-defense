@@ -35,7 +35,7 @@ export const Hero = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
-            Cyneris delivers AI-driven cybersecurity assessments and penetration testing across
+            Axioms delivers AI-driven cybersecurity assessments and penetration testing across
             mobile, web, wireless and vehicular surfaces — engineered to ISO/SAE&nbsp;21434.
           </p>
 

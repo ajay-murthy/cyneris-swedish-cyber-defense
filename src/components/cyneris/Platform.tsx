@@ -13,7 +13,7 @@ export const Platform = () => {
               <span className="text-gradient-gold">view of your stack.</span>
             </h2>
             <p className="text-muted-foreground mb-8 leading-relaxed text-lg">
-              The Cyneris platform consolidates findings from every assessment into a single
+              The Axioms platform consolidates findings from every assessment into a single
               live dashboard — correlating vulnerabilities, exploitability and business impact
               with AI-driven prioritisation.
             </p>
@@ -44,10 +44,10 @@ export const Platform = () => {
                   <div className="w-3 h-3 rounded-full bg-warning/80" />
                   <div className="w-3 h-3 rounded-full bg-success/80" />
                 </div>
-                <span className="font-mono text-xs text-muted-foreground ml-3">cyneris@nexus-6 ~ scan</span>
+                <span className="font-mono text-xs text-muted-foreground ml-3">axioms@nexus-6 ~ scan</span>
               </div>
               <div className="p-6 font-mono text-xs leading-relaxed space-y-1">
-                <div className="text-muted-foreground">$ cyneris scan --target acme.io --modules web,api,bt</div>
+                <div className="text-muted-foreground">$ axioms scan --target acme.io --modules web,api,bt</div>
                 <div className="text-primary">[+] Initiating reconnaissance...</div>
                 <div className="text-muted-foreground">[*] Subdomains discovered: 47</div>
                 <div className="text-muted-foreground">[*] Endpoints mapped: 1,284</div>
@@ -56,7 +56,7 @@ export const Platform = () => {
                 <div className="text-destructive">[!] CRITICAL: Auth bypass — /v2/admin/users</div>
                 <div className="text-primary">[✓] AI exploit-path analysis complete</div>
                 <div className="text-foreground">[→] 12 findings • 2 critical • 5 high • 5 medium</div>
-                <div className="text-muted-foreground pt-2">$ cyneris report --format pdf --iso 21434</div>
+                <div className="text-muted-foreground pt-2">$ axioms report --format pdf --iso 21434</div>
                 <div className="text-foreground terminal-cursor"></div>
               </div>
             </div>

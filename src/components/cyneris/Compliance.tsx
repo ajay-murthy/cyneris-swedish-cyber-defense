@@ -23,7 +23,7 @@ export const Compliance = () => {
                 <span className="text-gradient-gold">ISO/SAE 21434.</span>
               </h2>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                Cyneris operates the full cybersecurity engineering lifecycle for road vehicles —
+                Axioms operates the full cybersecurity engineering lifecycle for road vehicles —
                 from threat analysis and risk assessment through to production-phase monitoring.
               </p>
 
