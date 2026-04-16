@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { CyrenisMark } from "./CyrenisMark";
+import logo from "/axioms-logo.png";
 
 const links = [
   { label: "Platform", href: "#platform" },
@@ -30,7 +30,7 @@ export const Navbar = () => {
       <div className="container flex items-center justify-between h-16 md:h-20">
         <a href="#" className="flex items-center gap-2.5 group">
           <div className="relative">
-            <CyrenisMark className="w-7 h-7 group-hover:rotate-90 transition-transform duration-700" />
+            <img src={logo} alt="Axioms logo" className="w-8 h-8 object-contain group-hover:rotate-[8deg] transition-transform duration-700" width={32} height={32} />
             <div className="absolute inset-0 blur-md bg-primary/30 -z-10" />
           </div>
           <span className="font-mono text-lg font-bold tracking-tight">
