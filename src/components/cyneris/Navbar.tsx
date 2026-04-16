@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { Shield, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { CyrenisMark } from "./CyrenisMark";
 
 const links = [
   { label: "Platform", href: "#platform" },
@@ -27,10 +28,10 @@ export const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="flex items-center gap-2 group">
+        <a href="#" className="flex items-center gap-2.5 group">
           <div className="relative">
-            <Shield className="w-6 h-6 text-primary group-hover:rotate-12 transition-transform" strokeWidth={2.5} />
-            <div className="absolute inset-0 blur-md bg-primary/40 -z-10" />
+            <CyrenisMark className="w-7 h-7 group-hover:rotate-90 transition-transform duration-700" />
+            <div className="absolute inset-0 blur-md bg-primary/30 -z-10" />
           </div>
           <span className="font-mono text-lg font-bold tracking-tight">
             CYNERIS<span className="text-primary">.</span>

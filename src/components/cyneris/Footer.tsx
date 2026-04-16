@@ -1,4 +1,4 @@
-import { Shield } from "lucide-react";
+import { CyrenisMark } from "./CyrenisMark";
 
 export const Footer = () => {
   return (
@@ -6,8 +6,8 @@ export const Footer = () => {
       <div className="container">
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-6">
-              <Shield className="w-6 h-6 text-primary" strokeWidth={2.5} />
+            <div className="flex items-center gap-2.5 mb-6">
+              <CyrenisMark className="w-7 h-7" />
               <span className="font-mono text-lg font-bold">CYNERIS<span className="text-primary">.</span></span>
             </div>
             <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
