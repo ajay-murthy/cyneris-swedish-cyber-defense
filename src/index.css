@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Nunito:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -103,16 +103,17 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', system-ui, sans-serif;
-    font-feature-settings: "ss01", "cv11";
+    font-family: 'Nunito', system-ui, sans-serif;
+    font-feature-settings: "ss01";
     background-image: var(--gradient-mesh);
     background-attachment: fixed;
   }
 
   h1, h2, h3, h4, h5, h6, .font-display {
-    font-family: 'Instrument Serif', Georgia, serif;
-    letter-spacing: -0.015em;
-    font-weight: 400;
+    font-family: 'Fraunces', Georgia, serif;
+    font-variation-settings: "SOFT" 100, "WONK" 0, "opsz" 144;
+    letter-spacing: -0.025em;
+    font-weight: 500;
   }
 
   .font-mono {
