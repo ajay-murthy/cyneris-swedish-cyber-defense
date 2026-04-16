@@ -65,8 +65,8 @@ export default {
       },
       fontFamily: {
         mono: ['JetBrains Mono', 'monospace'],
-        sans: ['Work Sans', 'system-ui', 'sans-serif'],
-        display: ['JetBrains Mono', 'monospace'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Instrument Serif', 'Georgia', 'serif'],
       },
       backgroundImage: {
         'gradient-gold': 'var(--gradient-gold)',
