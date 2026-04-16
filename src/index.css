@@ -1,95 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Cyneris — Noir & Gold security brand design system. All colors HSL. */
+/* Cyneris — "Jack" inspired: cream canvas, charcoal ink, electric lime accent. All HSL. */
 
 @layer base {
   :root {
-    --background: 0 0% 4%;
-    --foreground: 45 30% 92%;
+    --background: 42 33% 94%;
+    --foreground: 0 0% 8%;
 
-    --card: 0 0% 7%;
-    --card-foreground: 45 30% 92%;
+    --card: 42 28% 97%;
+    --card-foreground: 0 0% 8%;
 
-    --popover: 0 0% 6%;
-    --popover-foreground: 45 30% 92%;
+    --popover: 42 28% 97%;
+    --popover-foreground: 0 0% 8%;
 
-    --primary: 43 56% 54%;
-    --primary-foreground: 0 0% 5%;
+    --primary: 76 88% 55%;
+    --primary-foreground: 0 0% 6%;
 
-    --primary-glow: 45 80% 70%;
+    --primary-glow: 76 95% 70%;
 
-    --secondary: 0 0% 10%;
-    --secondary-foreground: 45 30% 92%;
+    --secondary: 0 0% 8%;
+    --secondary-foreground: 42 33% 94%;
 
-    --muted: 0 0% 9%;
-    --muted-foreground: 45 8% 60%;
+    --muted: 42 18% 88%;
+    --muted-foreground: 0 0% 38%;
 
-    --accent: 43 56% 54%;
-    --accent-foreground: 0 0% 5%;
+    --accent: 76 88% 55%;
+    --accent-foreground: 0 0% 6%;
 
-    --destructive: 0 70% 45%;
-    --destructive-foreground: 45 30% 92%;
+    --destructive: 8 75% 52%;
+    --destructive-foreground: 42 33% 94%;
 
-    --success: 142 60% 45%;
-    --warning: 38 92% 55%;
+    --success: 142 60% 40%;
+    --warning: 38 92% 50%;
 
-    --border: 45 15% 14%;
-    --input: 45 15% 14%;
-    --ring: 43 56% 54%;
+    --border: 0 0% 12%;
+    --input: 0 0% 85%;
+    --ring: 76 88% 55%;
 
-    --radius: 0.25rem;
+    --radius: 1.25rem;
 
     /* Brand gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(43 56% 54%), hsl(45 80% 70%));
-    --gradient-noir: linear-gradient(180deg, hsl(0 0% 4%) 0%, hsl(0 0% 7%) 100%);
-    --gradient-radial-gold: radial-gradient(ellipse at top, hsl(43 56% 54% / 0.15), transparent 60%);
-    --gradient-mesh: radial-gradient(at 20% 20%, hsl(43 56% 54% / 0.18) 0px, transparent 50%),
-                     radial-gradient(at 80% 0%, hsl(45 80% 70% / 0.10) 0px, transparent 50%),
-                     radial-gradient(at 0% 80%, hsl(43 56% 54% / 0.08) 0px, transparent 50%);
+    --gradient-gold: linear-gradient(135deg, hsl(76 88% 55%), hsl(76 95% 70%));
+    --gradient-noir: linear-gradient(180deg, hsl(0 0% 8%) 0%, hsl(0 0% 4%) 100%);
+    --gradient-radial-gold: radial-gradient(ellipse at top, hsl(76 88% 55% / 0.18), transparent 60%);
+    --gradient-mesh: radial-gradient(at 20% 10%, hsl(76 88% 55% / 0.10) 0px, transparent 45%),
+                     radial-gradient(at 90% 0%, hsl(42 50% 80% / 0.25) 0px, transparent 50%);
 
     /* Shadows */
-    --shadow-gold: 0 10px 40px -10px hsl(43 56% 54% / 0.4);
-    --shadow-elegant: 0 20px 60px -20px hsl(0 0% 0% / 0.6);
-    --shadow-glow: 0 0 60px hsl(45 80% 70% / 0.3);
+    --shadow-gold: 0 14px 50px -14px hsl(76 88% 55% / 0.5);
+    --shadow-elegant: 0 24px 60px -24px hsl(0 0% 0% / 0.25);
+    --shadow-glow: 0 0 80px hsl(76 95% 70% / 0.35);
 
     /* Transitions */
     --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
     --transition-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 
-    --sidebar-background: 0 0% 5%;
-    --sidebar-foreground: 45 30% 92%;
-    --sidebar-primary: 43 56% 54%;
-    --sidebar-primary-foreground: 0 0% 5%;
-    --sidebar-accent: 0 0% 10%;
-    --sidebar-accent-foreground: 45 30% 92%;
-    --sidebar-border: 45 15% 14%;
-    --sidebar-ring: 43 56% 54%;
+    --sidebar-background: 42 33% 94%;
+    --sidebar-foreground: 0 0% 8%;
+    --sidebar-primary: 76 88% 55%;
+    --sidebar-primary-foreground: 0 0% 6%;
+    --sidebar-accent: 42 18% 88%;
+    --sidebar-accent-foreground: 0 0% 8%;
+    --sidebar-border: 0 0% 85%;
+    --sidebar-ring: 76 88% 55%;
   }
 
   .dark {
-    --background: 0 0% 4%;
-    --foreground: 45 30% 92%;
-    --card: 0 0% 7%;
-    --card-foreground: 45 30% 92%;
-    --popover: 0 0% 6%;
-    --popover-foreground: 45 30% 92%;
-    --primary: 43 56% 54%;
-    --primary-foreground: 0 0% 5%;
-    --secondary: 0 0% 10%;
-    --secondary-foreground: 45 30% 92%;
-    --muted: 0 0% 9%;
-    --muted-foreground: 45 8% 60%;
-    --accent: 43 56% 54%;
-    --accent-foreground: 0 0% 5%;
-    --destructive: 0 70% 45%;
-    --destructive-foreground: 45 30% 92%;
-    --border: 45 15% 14%;
-    --input: 45 15% 14%;
-    --ring: 43 56% 54%;
+    --background: 0 0% 6%;
+    --foreground: 42 33% 94%;
+    --card: 0 0% 9%;
+    --card-foreground: 42 33% 94%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 42 33% 94%;
+    --primary: 76 88% 55%;
+    --primary-foreground: 0 0% 6%;
+    --secondary: 42 33% 94%;
+    --secondary-foreground: 0 0% 8%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 42 8% 65%;
+    --accent: 76 88% 55%;
+    --accent-foreground: 0 0% 6%;
+    --destructive: 8 75% 52%;
+    --destructive-foreground: 42 33% 94%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 76 88% 55%;
   }
 }
 
@@ -104,15 +103,16 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Work Sans', system-ui, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
     font-feature-settings: "ss01", "cv11";
     background-image: var(--gradient-mesh);
     background-attachment: fixed;
   }
 
   h1, h2, h3, h4, h5, h6, .font-display {
-    font-family: 'JetBrains Mono', monospace;
-    letter-spacing: -0.02em;
+    font-family: 'Instrument Serif', Georgia, serif;
+    letter-spacing: -0.015em;
+    font-weight: 400;
   }
 
   .font-mono {
@@ -122,19 +122,19 @@
 
 @layer components {
   .text-gradient-gold {
-    @apply bg-clip-text text-transparent;
-    background-image: var(--gradient-gold);
+    @apply italic;
+    color: hsl(var(--foreground));
   }
 
   .grid-noise {
     background-image:
-      linear-gradient(hsl(43 56% 54% / 0.04) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(43 56% 54% / 0.04) 1px, transparent 1px);
-    background-size: 48px 48px;
+      linear-gradient(hsl(0 0% 0% / 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(0 0% 0% / 0.04) 1px, transparent 1px);
+    background-size: 56px 56px;
   }
 
   .gold-border-glow {
-    box-shadow: 0 0 0 1px hsl(43 56% 54% / 0.3), 0 0 30px hsl(43 56% 54% / 0.15);
+    box-shadow: 0 0 0 1px hsl(0 0% 8% / 0.15), 0 14px 40px -10px hsl(76 88% 55% / 0.35);
   }
 
   .terminal-cursor::after {
@@ -160,8 +160,8 @@
 }
 
 @keyframes pulse-gold {
-  0%, 100% { box-shadow: 0 0 0 0 hsl(43 56% 54% / 0.5); }
-  50% { box-shadow: 0 0 0 12px hsl(43 56% 54% / 0); }
+  0%, 100% { box-shadow: 0 0 0 0 hsl(76 88% 55% / 0.5); }
+  50% { box-shadow: 0 0 0 16px hsl(76 88% 55% / 0); }
 }
 
 .animate-scan { animation: scan 3s linear infinite; }
