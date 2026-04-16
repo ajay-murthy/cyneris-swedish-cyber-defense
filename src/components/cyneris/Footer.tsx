@@ -1,4 +1,4 @@
-import { CyrenisMark } from "./CyrenisMark";
+import logo from "/axioms-logo.png";
 
 export const Footer = () => {
   return (
@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2.5 mb-6">
-              <CyrenisMark className="w-7 h-7" />
+              <img src={logo} alt="Axioms logo" className="w-8 h-8 object-contain" width={32} height={32} loading="lazy" />
               <span className="font-mono text-lg font-bold">AXIOMS<span className="text-primary">.</span></span>
             </div>
             <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
