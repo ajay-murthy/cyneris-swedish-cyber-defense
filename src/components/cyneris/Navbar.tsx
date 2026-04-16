@@ -52,11 +52,8 @@ export const Navbar = () => {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
-          <Button variant="ghost" size="sm" className="font-mono text-xs">
-            CLIENT LOGIN
-          </Button>
-          <Button variant="gold" size="sm">
-            Request Assessment
+          <Button variant="gold" size="sm" asChild>
+            <a href="#contact">Request Assessment</a>
           </Button>
         </div>
 
@@ -78,7 +75,9 @@ export const Navbar = () => {
                 {l.label}
               </a>
             ))}
-            <Button variant="gold" className="mt-2">Request Assessment</Button>
+            <Button variant="gold" className="mt-2" asChild>
+              <a href="#contact" onClick={() => setOpen(false)}>Request Assessment</a>
+            </Button>
           </nav>
         </div>
       )}
