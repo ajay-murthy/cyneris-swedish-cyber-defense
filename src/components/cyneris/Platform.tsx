@@ -1,3 +1,5 @@
+import { ScrambleText } from "@/components/cyneris/ScrambleText";
+
 export const Platform = () => {
   return (
     <section id="platform" className="relative py-24 md:py-32 border-y border-border bg-card/30">
@@ -8,13 +10,13 @@ export const Platform = () => {
               // Platform
             </div>
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              An adversary's
+              <ScrambleText text="An adversary's" />
               <br />
-              <span className="text-gradient-gold">view of your stack.</span>
+              <span className="text-gradient-gold"><ScrambleText text="view of your stack." /></span>
             </h2>
             <p className="text-muted-foreground mb-8 leading-relaxed text-lg">
               The Axioms platform consolidates findings from every assessment into a single
-              live dashboard — correlating vulnerabilities, exploitability and business impact
+              live dashboard, correlating vulnerabilities, exploitability and business impact
               with AI-driven prioritisation.
             </p>
 
@@ -53,9 +55,9 @@ export const Platform = () => {
                 <div className="text-muted-foreground">[*] Endpoints mapped: 1,284</div>
                 <div className="text-muted-foreground">[*] Bluetooth devices: 3</div>
                 <div className="text-warning">[!] CVE-2024-3094 detected on api.acme.io</div>
-                <div className="text-destructive">[!] CRITICAL: Auth bypass — /v2/admin/users</div>
+                <div className="text-destructive">[!] CRITICAL: Auth bypass /v2/admin/users</div>
                 <div className="text-primary">[✓] AI exploit-path analysis complete</div>
-                <div className="text-foreground">[→] 12 findings • 2 critical • 5 high • 5 medium</div>
+                <div className="text-foreground">[→] 12 findings · 2 critical · 5 high · 5 medium</div>
                 <div className="text-muted-foreground pt-2">$ axioms report --format pdf --iso 21434</div>
                 <div className="text-foreground terminal-cursor"></div>
               </div>

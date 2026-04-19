@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import { ScrambleText } from "@/components/cyneris/ScrambleText";
 
 export const CTA = () => {
   const { toast } = useToast();
@@ -36,9 +37,9 @@ export const CTA = () => {
               // Engage
             </div>
             <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-[1.05]">
-              Test your defences
+              <ScrambleText text="Test your defences" />
               <br />
-              before <span className="text-gradient-gold">they do.</span>
+              <ScrambleText text="before " /><span className="text-gradient-gold"><ScrambleText text="they do." /></span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
               Send us a confidential message. Our offensive engineering team

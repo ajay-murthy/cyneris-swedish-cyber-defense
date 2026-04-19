@@ -1,5 +1,9 @@
 import { ArrowRight, Terminal } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ScrambleText } from "@/components/cyneris/ScrambleText";
+
+const scrollTo = (id: string) =>
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
 export const Hero = () => {
   return (
@@ -22,29 +26,29 @@ export const Hero = () => {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
             </span>
             <span className="text-xs font-mono text-foreground tracking-widest uppercase">
-              EST. 2024 — STOCKHOLM, SWEDEN
+              EST. 2024 · STOCKHOLM, SWEDEN
             </span>
           </div>
 
           <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl xl:text-9xl leading-[0.9] mb-6 opacity-0 animate-fade-up tracking-tight" style={{ animationDelay: "0.1s" }}>
-            Adversarial
+            <ScrambleText text="Adversarial" />
             <br />
-            intelligence for
+            <ScrambleText text="intelligence for" />
             <br />
-            <span className="italic">connected systems.</span>
+            <span className="italic"><ScrambleText text="connected systems." /></span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
             Axioms delivers AI-driven cybersecurity assessments and penetration testing across
-            mobile, web, wireless and vehicular surfaces — engineered to ISO/SAE&nbsp;21434.
+            mobile, web, wireless and vehicular surfaces, engineered to ISO/SAE&nbsp;21434.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-up" style={{ animationDelay: "0.4s" }}>
-            <Button variant="gold" size="xl" className="group">
+            <Button variant="gold" size="xl" className="group" onClick={() => scrollTo("contact")}>
               Request an Assessment
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="outlineGold" size="xl">
+            <Button variant="outlineGold" size="xl" onClick={() => scrollTo("services")}>
               <Terminal className="mr-2 h-4 w-4" />
               View Capabilities
             </Button>

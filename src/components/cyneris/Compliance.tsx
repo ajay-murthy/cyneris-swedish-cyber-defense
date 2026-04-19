@@ -1,7 +1,8 @@
 import { CheckCircle2 } from "lucide-react";
+import { ScrambleText } from "@/components/cyneris/ScrambleText";
 
 const phases = [
-  { phase: "01", title: "Concept Phase", desc: "Item definition, asset identification and TARA — Threat Analysis & Risk Assessment per ISO/SAE 21434 §15." },
+  { phase: "01", title: "Concept Phase", desc: "Item definition, asset identification and TARA: Threat Analysis & Risk Assessment per ISO/SAE 21434 §15." },
   { phase: "02", title: "Product Development", desc: "Cybersecurity goals, technical concept design, hardware/software requirements aligned with §9 and §10." },
   { phase: "03", title: "Verification & Validation", desc: "Penetration testing, fuzzing campaigns and vulnerability analysis fulfilling §11 evidence requirements." },
   { phase: "04", title: "Production & Operations", desc: "Continuous cybersecurity monitoring, incident response plans and post-development phase support per §13." },
@@ -15,15 +16,15 @@ export const Compliance = () => {
           <div className="lg:col-span-5">
             <div className="lg:sticky lg:top-32">
               <div className="font-mono text-xs tracking-[0.3em] text-primary uppercase mb-4">
-                // 03 — Compliance
+                // 03 Compliance
               </div>
               <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Engineered to
+                <ScrambleText text="Engineered to" />
                 <br />
-                <span className="text-gradient-gold">ISO/SAE 21434.</span>
+                <span className="text-gradient-gold"><ScrambleText text="ISO/SAE 21434." /></span>
               </h2>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                Axioms operates the full cybersecurity engineering lifecycle for road vehicles —
+                Axioms operates the full cybersecurity engineering lifecycle for road vehicles,
                 from threat analysis and risk assessment through to production-phase monitoring.
               </p>
 

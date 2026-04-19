@@ -1,11 +1,12 @@
 import { Smartphone, Globe, Bluetooth, Wifi, Car, Brain } from "lucide-react";
+import { ScrambleText } from "@/components/cyneris/ScrambleText";
 
 const services = [
   {
     icon: Smartphone,
     title: "Android Application",
     code: "MOB-01",
-    desc: "Static and dynamic analysis of APKs — reverse engineering, runtime instrumentation, MASVS-aligned reporting.",
+    desc: "Static and dynamic analysis of APKs: reverse engineering, runtime instrumentation, MASVS-aligned reporting.",
   },
   {
     icon: Globe,
@@ -45,12 +46,12 @@ export const Services = () => {
       <div className="container">
         <div className="max-w-3xl mb-16">
           <div className="font-mono text-xs tracking-[0.3em] text-primary uppercase mb-4">
-            // 01 — Capabilities
+            // 01 Capabilities
           </div>
           <h2 className="font-display text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Six attack surfaces.
+            <ScrambleText text="Six attack surfaces." />
             <br />
-            <span className="text-gradient-gold">One adversarial platform.</span>
+            <span className="text-gradient-gold"><ScrambleText text="One adversarial platform." /></span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Axioms fuses AI-augmented reconnaissance with hands-on offensive engineering.

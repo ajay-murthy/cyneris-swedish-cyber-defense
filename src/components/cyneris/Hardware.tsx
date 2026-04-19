@@ -1,6 +1,7 @@
 import deviceCompact from "@/assets/device-compact.png";
 import deviceNexus from "@/assets/device-nexus.png";
 import { Cpu, Radio, ShieldCheck } from "lucide-react";
+import { ScrambleText } from "@/components/cyneris/ScrambleText";
 
 export const Hardware = () => {
   return (
@@ -9,15 +10,15 @@ export const Hardware = () => {
       <div className="container relative">
         <div className="max-w-3xl mb-20">
           <div className="font-mono text-xs tracking-[0.3em] text-primary uppercase mb-4">
-            // 02 — Field hardware
+            // 02 Field hardware
           </div>
           <h2 className="font-display text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Purpose-built
+            <ScrambleText text="Purpose-built" />
             <br />
-            <span className="text-gradient-gold">offensive appliances.</span>
+            <span className="text-gradient-gold"><ScrambleText text="offensive appliances." /></span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Our consultants deploy Axioms field units — ruggedised security testing appliances
+            Our consultants deploy Axioms field units, ruggedised security testing appliances
             engineered in Sweden for on-site assessments and continuous monitoring.
           </p>
         </div>
@@ -34,7 +35,7 @@ export const Hardware = () => {
               />
             </div>
             <div className="absolute -bottom-4 -right-4 bg-background border border-primary/40 rounded-md px-4 py-2 font-mono text-xs gold-border-glow">
-              <span className="text-primary">●</span> ONLINE — RF SCANNING
+              <span className="text-primary">●</span> ONLINE / RF SCANNING
             </div>
           </div>
 

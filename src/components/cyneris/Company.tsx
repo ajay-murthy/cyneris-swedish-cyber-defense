@@ -1,4 +1,5 @@
 import { MapPin, Calendar, Users, Award } from "lucide-react";
+import { ScrambleText } from "@/components/cyneris/ScrambleText";
 
 export const Company = () => {
   return (
@@ -7,12 +8,12 @@ export const Company = () => {
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
             <div className="font-mono text-xs tracking-[0.3em] text-primary uppercase mb-4">
-              // 04 — Company
+              // 04 Company
             </div>
             <h2 className="font-display text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Born in
+              <ScrambleText text="Born in" />
               <br />
-              <span className="text-gradient-gold">Stockholm, 2024.</span>
+              <span className="text-gradient-gold"><ScrambleText text="Stockholm, 2024." /></span>
             </h2>
           </div>
 
@@ -24,7 +25,7 @@ export const Company = () => {
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Headquartered in Stockholm, we serve OEMs, financial institutions and critical
-              infrastructure operators across the Nordics and EU — under sovereign data
+              infrastructure operators across the Nordics and EU, under sovereign data
               jurisdiction and full GDPR compliance.
             </p>
 
