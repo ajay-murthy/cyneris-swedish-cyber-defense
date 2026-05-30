@@ -15,13 +15,20 @@ export const CTA = () => {
     e.preventDefault();
     setSubmitting(true);
     try {
-      const response = await fetch("https://formspree.io/f/REPLACE_WITH_FORM_ID", {
+      const form = e.target as HTMLFormElement;
+      const data = {
+        name: (form.elements.namedItem("name") as HTMLInputElement).value,
+        company: (form.elements.namedItem("company") as HTMLInputElement).value,
+        email: (form.elements.namedItem("email") as HTMLInputElement).value,
+        message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+      };
+      const response = await fetch("https://formsubmit.co/ajax/shruthi@axioms.se", {
         method: "POST",
-        body: new FormData(e.target as HTMLFormElement),
-        headers: { Accept: "application/json" },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(data),
       });
       if (response.ok) {
-        (e.target as HTMLFormElement).reset();
+        form.reset();
         toast({
           title: "Message received",
           description: "Our team will respond within one business day.",
