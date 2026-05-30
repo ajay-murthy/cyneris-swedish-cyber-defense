@@ -32,6 +32,7 @@ export const Footer = () => {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>Stockholm, Sweden</li>
               <li>Est. 2024</li>
+              <li>A <span className="text-foreground font-medium">Kratu AB</span> company</li>
               <li><a href="#contact" className="hover:text-primary transition-colors">Contact us</a></li>
               <li><a href="#contact" className="hover:text-primary transition-colors">Responsible disclosure</a></li>
             </ul>
@@ -40,7 +41,7 @@ export const Footer = () => {
 
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <div className="font-mono text-xs text-muted-foreground">
-            © 2024–{new Date().getFullYear()} AXIOMS AB · ALL RIGHTS RESERVED
+            © 2024–{new Date().getFullYear()} AXIOMS AB · A KRATU AB COMPANY · ALL RIGHTS RESERVED
           </div>
           <div className="flex gap-6 font-mono text-xs text-muted-foreground">
             <a href="#" className="hover:text-primary transition-colors">PRIVACY</a>

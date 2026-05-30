@@ -1,4 +1,4 @@
-import { MapPin, Calendar, Users, Award } from "lucide-react";
+import { MapPin, Calendar, Users, Award, Building2 } from "lucide-react";
 import { ScrambleText } from "@/components/cyneris/ScrambleText";
 
 export const Company = () => {
@@ -35,6 +35,7 @@ export const Company = () => {
                 { icon: Calendar, k: "Founded", v: "2024" },
                 { icon: Users, k: "Operating", v: "EU & Nordics" },
                 { icon: Award, k: "Specialisation", v: "Automotive · Mobile · IoT" },
+                { icon: Building2, k: "Owned by", v: "Kratu AB" },
               ].map((s) => (
                 <div key={s.k} className="flex items-start gap-3 p-4 border border-border rounded-md bg-card/40">
                   <s.icon className="w-4 h-4 text-primary mt-0.5 shrink-0" />

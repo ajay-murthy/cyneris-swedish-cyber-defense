@@ -11,18 +11,37 @@ export const CTA = () => {
   const { toast } = useToast();
   const [submitting, setSubmitting] = useState(false);
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitting(true);
-    // Simulated submission — wire up to backend later
-    setTimeout(() => {
-      setSubmitting(false);
-      (e.target as HTMLFormElement).reset();
-      toast({
-        title: "Message received",
-        description: "Our team will respond within one business day.",
+    try {
+      const response = await fetch("https://formspree.io/f/REPLACE_WITH_FORM_ID", {
+        method: "POST",
+        body: new FormData(e.target as HTMLFormElement),
+        headers: { Accept: "application/json" },
       });
-    }, 600);
+      if (response.ok) {
+        (e.target as HTMLFormElement).reset();
+        toast({
+          title: "Message received",
+          description: "Our team will respond within one business day.",
+        });
+      } else {
+        toast({
+          title: "Submission failed",
+          description: "Please try again or email shruthi@axioms.se directly.",
+          variant: "destructive",
+        });
+      }
+    } catch {
+      toast({
+        title: "Network error",
+        description: "Please check your connection and try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
